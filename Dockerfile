@@ -1,6 +1,6 @@
 FROM node
 
-RUN sudo npm install express --save
+RUN npm install express --save
 
 ADD ./ /src
 
