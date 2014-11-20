@@ -1,8 +1,10 @@
 FROM node
 
-RUN npm install express --save
-
 ADD ./ /src
+
+WORKDIR /src
+
+RUN npm install
 
 EXPOSE 9005
 
